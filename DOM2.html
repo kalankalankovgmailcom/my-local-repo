@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 id="title">JavaScript Leson</h1>
+    <div id="container">
+        <p id="intro">This is a Leson on how 
+            to create and remove HTML elements dinamically.
+        </p>
+        <ul id="list">
+            <li>Item1</li>
+            <li>Item2</li>
+            <li>Item3</li>
+        </ul>
+    </div>
+    <script>
+    let currentDate = new Date( );
+
+    let birthday =new Date("1988-11-22");
+    console.log(birthday.toLocaleDateString());
+    let anniversary = new Date(2023, 10, 19, 17, 35);
+    console.log(currentDate);
+
+    let newList = document.createElement("li");
+    newList.textContent = "Новий елемент";
+    let list22 = document.getElementById("list");
+    list22.appendChild(newList);
+    
+/*let newListItem = document.createElement("li");
+newListItem.textContent = "Item 1.5";
+let list = document.getElementById("list");
+let secondListItem = list.children[1];
+list.insertBefore(newListItem, secondListItem);
+
+       let newHeading = document.createElement("h1");
+       newHeading.textContent = "Updated JavaScript Lesson";
+       let body = document.body;
+       let oldHeading = document.getElementById("title");
+       body.replaceChild(newHeading, oldHeading);
+
+       let lastParagraph = container.lastChild;
+       container.removeChild(lastParagraph);
+*/
+
+    </script>
+</body>
+</html>

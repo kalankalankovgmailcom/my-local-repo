@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Web Page</title>
+</head>
+<body>
+
+  <div id="timer"></div>
+
+   <div id="clock1"></div>
+   <script src="index.js"></script>
+
+  <h1 id="main">Hello World!</h1>
+  <p>Thes is a paragraf.</p>
+  <ul>
+  <li class="hobbits">Item 1</li> 
+  <li class="hobbits">Item2</li>
+  <li class="hobbits">Item 3</li>
+  </ul> 
+
+  <script>
+
+
+    let mainHeading = document.querySelector(`#main`);
+    mainHeading.textContent = `Hello Dom!`;
+    let items = document.querySelectorAll(`.item`);
+    for (let item of items) {
+      item.style.backgroundColor = `yellow`;
+    }
+
+    let paragraf = document.querySelectorAll(`p`);
+    for (let p of paragraf) {
+      p.style.backgroundColor = `blue`;
+    }
+
+    let myElement1 = document.getElementById(`main`);
+    myElement1.style.borderStyle = `dotted`;
+
+    let myElement = document.getElementsByClassName(`hobbits`);//document.getElementsByTagName(`p`);
+      for ( let element of myElement) {
+        element.textContent = `Гобіт Ширу`;
+      }
+    
+
+  </script>
+</body>
+</html>

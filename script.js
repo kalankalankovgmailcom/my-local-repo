@@ -305,3 +305,34 @@ let student1 = {
 let introduction1 = `My name is ${student1.namee}, I am ${student1.agee} years old,
 and I stading a ${student1.occupation}.`;
 console.log(introduction1);
+1111111111111111111111111111111111111111111
+function modifyArray(array, callback) {
+    // Використовуємо метод map для застосування колбек-функції до кожного елементу масиву
+    let modifiedArray = array.map(callback);
+    return modifiedArray;
+  }
+  
+  // Колбек-функція, яка множить кожен елемент на 2
+  function multiplyByTwo(number) {
+    return number * 2;
+  }
+  
+  // Тестуємо функцію modifyArray
+  let originalArray = [1, 2, 3, 4, 5];
+  let newArray = modifyArray(originalArray, multiplyByTwo);
+  
+  console.log("Оригінальний масив:", originalArray);
+  console.log("Модифікований масив (кожен елемент помножено на 2):", newArray);
+  111111111111111111111111111111111111111111
+//Timeseat timeout
+ // console.log("Before set Timeout");
+
+  //setTimeout(() => {
+    //console.log("Inside set Timeout");
+
+  //}, 3000 );
+
+  //console.log("After set Timeout");
+
+  //pryklad2
+  
